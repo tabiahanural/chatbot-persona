@@ -55,6 +55,7 @@ def stream_balasan(client, teks_user, previous_id):
 
 client = get_client()
 
+st.markdown(persona.CSS, unsafe_allow_html=True)
 st.title(persona.JUDUL)
 st.caption(persona.SUBJUDUL)
 
