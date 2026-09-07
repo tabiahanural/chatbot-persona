@@ -61,16 +61,21 @@ CSS = """
     background-attachment: fixed;
 }
 
-/* Garis hazard proyek di tepi atas layar */
-.stApp::before {
+/* Toolbar atas dibikin menyatu dengan latar */
+[data-testid="stHeader"] {
+    background: rgba(20, 16, 14, 0.88);
+    backdrop-filter: blur(6px);
+}
+
+/* Garis hazard proyek, ditempel di bawah toolbar biar tidak ketutup */
+[data-testid="stHeader"]::after {
     content: "";
-    position: fixed;
-    top: 0; left: 0; right: 0;
-    height: 7px;
+    position: absolute;
+    bottom: 0; left: 0; right: 0;
+    height: 5px;
     background: repeating-linear-gradient(
         45deg, #FFB020 0 14px, #1A1512 14px 28px
     );
-    z-index: 999;
 }
 
 /* Judul: tebal, rapat, berkesan dicetak di plang proyek */
