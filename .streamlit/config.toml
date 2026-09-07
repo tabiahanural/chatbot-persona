@@ -1,0 +1,8 @@
+# Tema "ruang proyek": gelap, tegas, aksen oranye-merah seperti helm & rambu proyek.
+[theme]
+base = "dark"
+primaryColor = "#FF5A1F"
+backgroundColor = "#111111"
+secondaryBackgroundColor = "#1C1C1E"
+textColor = "#F5F5F5"
+font = "sans serif"
